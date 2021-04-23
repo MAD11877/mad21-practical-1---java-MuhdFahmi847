@@ -28,5 +28,29 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     
+    System.out.println("Enter integer: ");
+    int firstInput = in.nextInt();
+    int nextNums[] = new int[firstInput];
+    
+    for (int i = 0; i < firstInput; i++) {
+      nextNums[i] = in.nextInt();  
+    }
+    
+    int highest = 0;
+    int mode = 0;
+    
+    for (int x = 0; x < nextNums.length; x++) {
+      int count = 0;
+      for (int y = 0; y < nextNums.length; y++) {
+        if (nextNums[x] == nextNums[y]) {
+          count++;
+        }
+      }
+      if (count > highest) {
+        highest = count;
+        mode = nextNums[x];
+      }
+    }
+    System.out.println("Mode is " + mode);
   }
 }
