@@ -18,7 +18,6 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter integer to print right angle triangle: ");
     int numInput = in.nextInt();
     for (int i = 0; i < numInput; i++) {
       for (int x = numInput; x > i; x--) {

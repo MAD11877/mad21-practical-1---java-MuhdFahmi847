@@ -28,7 +28,6 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     
-    System.out.println("Enter integer: ");
     int firstInput = in.nextInt();
     int nextNums[] = new int[firstInput];
     
@@ -51,6 +50,6 @@ public class Question5
         mode = nextNums[x];
       }
     }
-    System.out.println("Mode is " + mode);
+    System.out.println(mode);
   }
 }
