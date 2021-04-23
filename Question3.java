@@ -15,6 +15,6 @@ public class Question3
     System.out.println("Enter integer: ");
     int num = in.nextInt();
     int num2 = num * num;
-    System.out.println("New Integer: " + num2);
+    System.out.println(num2);
   }
 }
